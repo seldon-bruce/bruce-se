@@ -6,6 +6,7 @@
         "namespace": "prod",
         "creationTimestamp": null,
         "labels": {
+            "app.kubernetes.io/instance": "bruce-se-prod",
             "fluentd": "true"
         }
     },
@@ -51,7 +52,15 @@
                 "replicas": 1,
                 "engineResources": {},
                 "svcOrchSpec": {},
-                "traffic": 100
+                "traffic": 100,
+                "explainer": {
+                    "type": "AnchorImages",
+                    "modelUri": "gs://seldon-models/tfserving/cifar10/explainer-py36-0.5.2",
+                    "containerSpec": {
+                        "name": "",
+                        "resources": {}
+                    }
+                }
             }
         ],
         "annotations": {
