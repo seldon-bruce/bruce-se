@@ -37,7 +37,7 @@
                                     "--http_port",
                                     "8080",
                                     "--protocol",
-                                    "tensorflow.http",
+                                    "seldonfeedback.http",
                                     "--storage_uri",
                                     "adserver.cm_models.multiclass_numeric.MultiClassNumeric",
                                     "--reply_url",
